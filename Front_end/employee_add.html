@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management system</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src = "index.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="index.js"></script>
+   
+</head>
+<body onload="login_load()">
+  <nav class="navbar navbar-inverse" id = "head-info">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Employee details</a>
+    </div>
+    
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" id = "logout-btn" onclick = "logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+</div>
+</nav>
+  
+
+  <div class="container">
+    <div class="alert alert-warning" id = "alert">
+      <strong>Error! </strong> <p id = "error-msg">Indicates a warning that might need attention.</p>
+    </div>
+    <h1 class="text-center">Add Employee</h1>
+    <label for="uname"><b>Name</b></label>
+    <input type="text" id = "emp-name" placeholder="Enter name" name="uname" required>
+
+    <label for="psw"><b>Salary</b></label>
+    <input type="text" id = "emp-salary" placeholder="Enter salary" name="psw" required>
+    <label for="psw"><b>Address</b></label>
+    <input type="text" id = "emp-address" placeholder="Enter address" name="psw" required>
+    <label for="psw"><b>Designation</b></label>
+    <input type="text" id = "emp-designation" placeholder="Enter designation" name="psw" required>
+
+    <button type="submit" onclick = "add_employee()">Submit</button>
+    
+  </div>
+
+
+</body>
+</html>
+
+
